@@ -1,2 +1,20 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Add this CSS to your index.css or a similar global CSS file */
+.slide-in-left {
+  position: fixed; /* Use fixed positioning */
+  top: 60px; /* Align to the top */
+  left: 0; /* Start from the left */
+  bottom: 0;
+  width: 250px; /* Adjust the width as needed */
+  background-color: #2d3748; /* Darker background color */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 51; /* Ensure it's above the header */
+  padding-top: 0; /* Remove padding to avoid overlapping with the header */
+}
+
+.slide-in-left.open {
+  transform: translateX(0);
+}
