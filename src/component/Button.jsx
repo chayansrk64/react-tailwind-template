@@ -1,7 +1,7 @@
 
 const Button = () => {
   return (
-    <div className="bg-red-500">Button</div>
+    <div className=""><button className="btn btn-soft btn-accent">Accent</button></div>
   )
 }
 
