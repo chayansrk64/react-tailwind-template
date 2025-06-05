@@ -16,7 +16,6 @@ Welcome to SARKER SHOP, a modern and responsive e-commerce website built with Re
 
 ![SARKER SHOP Preview](src/assets/preview.png)
 
-*Replace `link-to-your-preview-image.png` with the actual path or URL to your preview image.*
 
 ## Technologies Used
 

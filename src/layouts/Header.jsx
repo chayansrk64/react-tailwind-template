@@ -33,7 +33,7 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <a href="/" className="text-green-600 font-bold text-xl uppercase">
+          <a href="/" className="text-white font-bold text-xl uppercase">
             SARKER SHOP
           </a>
 
