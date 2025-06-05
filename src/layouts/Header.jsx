@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaSearch, FaShoppingCart, FaHeart, FaBars, FaTimes } from "react-icons/fa";
+import MobileMenu from "../component/MobileMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,8 @@ const Header = () => {
           </a>
 
           {/* Icons (Mobile) */}
-          <div className="md:hidden flex space-x-4 items-center">
+
+          {/* <div className="md:hidden flex space-x-4 items-center">
             <a href="/search" className="text-gray-300 hover:text-white">
               <FaSearch size={30} />
             </a>
@@ -67,7 +69,10 @@ const Header = () => {
             <a href="/login" className="hover:text-green-600 bg-green-600 px-3 py-2 rounded text-white">
               Login
             </a>
-          </div>
+          </div> */}
+
+          
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
@@ -118,6 +123,8 @@ const Header = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
+
+{/*       
       <div ref={menuRef} className={`md:hidden bg-gray-900 text-white shadow-md rounded-lg py-2 slide-in-left ${isMenuOpen ? 'open' : ''}`}>
         <div className="flex justify-end px-4">
           <button onClick={() => setIsMenuOpen(false)} className="text-gray-400 hover:text-white">
@@ -148,7 +155,10 @@ const Header = () => {
         >
           Hot Deal
         </a>
-      </div>
+      </div> */}
+
+
+
     </nav>
   );
 };
